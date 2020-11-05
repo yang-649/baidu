@@ -1,0 +1,155 @@
+/* 头部开始 */
+.header {
+    height: 60px;
+    line-height: 60px;
+}
+.header .menu {
+    float: left;
+}
+.header .other {
+    float: right;
+}
+
+a {
+    color: #222222;
+    font-size: 13px;
+    /*去除下划线*/
+    text-decoration: none;
+}
+a:hover {
+    color: #315efb;
+}
+
+.header a {
+    margin: 0 15px;
+}
+.other a:first-of-type {
+    color: #f63051;
+}
+.other a:first-of-type:hover {
+    color: #315efb;
+}
+.login {
+    background-color: #4e71f2;
+    padding: 0 10px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    /*设置圆角*/
+    border-radius: 5px;
+}
+.login:hover {
+    color: white;
+}
+/* 头部结束 */
+
+/* 主内容开始 */
+.main {
+    /* 让一个固定宽度的div水平居中：margin:0 auto */
+    margin: 0 auto;
+    width: 700px;
+    height: 350px;
+    clear: both;
+    /*内容对齐方式：水平居中*/
+    text-align: center;
+}
+.main img {
+    margin-bottom: 10px;
+}
+.main input[type=text] {
+    width: 550px;
+    height: 40px;
+    border: 2px solid #4e71f2;
+    /*border-radius: 15px;*/
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /*去除浏览器自动添加多外框*/
+    outline: none;
+    /* 多个（行内块级）元素之间可以设置垂直方向对齐多方式   */
+    vertical-align: middle;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.main input[type=button] {
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    border: none;
+    background-color: #4e71f2;
+    color: white;
+    /* 多个行内块级元素之间可以设置垂直方向对齐多方式   */
+    vertical-align: middle;
+}
+.main .baidu-hot {
+    text-align: initial;
+    padding: 5px;
+    margin-top: 30px;
+}
+.news {
+    margin-top: 15px;
+    /* css flex布局*/
+    display: flex;
+}
+.news div {
+    flex: 1;
+}
+
+.news a {
+    display: block;
+    margin: 10px 0;
+}
+
+.news .icon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.news .icon1 {
+    color: white;
+    background: url("../images/icon1.png");
+ }
+.news .icon2 {
+    color: white;
+    background: url("../images/icon2.png");
+}
+.news .icon3 {
+    color: white;
+    background: url("../images/icon3.png");
+}
+
+.news .iconhot {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: center;
+    background: url("../images/iconhot.png");
+    color: white;
+    vertical-align: middle;
+}
+
+.news .iconmorehot {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    text-align: center;
+    background: url("../images/iconmorehot.png");
+    color: white;
+    vertical-align: middle;
+}
+
+.news span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.news div:last-of-type {
+    padding-left: 120px;
+}
